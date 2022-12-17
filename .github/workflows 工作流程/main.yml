@@ -1,12 +1,10 @@
 name: Extract stealth.min.js
 
-on:
-  push:
-    branches:
-      - none
-    paths:
-      - "packages/puppeteer-extra-plugin-stealth/**"
 
+
+on:
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
